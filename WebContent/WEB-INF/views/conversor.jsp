@@ -20,7 +20,7 @@
 		</tr>
 		<tr>
 			<td>
-				<input type="submit" name="bt_conerte" value="Converter" />
+				<input type="submit" name="conerte" value="Converter" />
 			</td>
 		</tr>
 	</table>

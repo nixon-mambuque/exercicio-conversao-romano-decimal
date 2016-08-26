@@ -11,4 +11,9 @@ public class ConversorController {
 		System.out.println("Executando a lógica String MVC");
 		return "conversor";
 	}
+	
+	@RequestMapping("/converte")
+	public String convertendo(){
+		return "resultadosConversor";
+	}
 }

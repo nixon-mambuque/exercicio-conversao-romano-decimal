@@ -12,6 +12,6 @@ public class ConversorDeRomanoParaDecimalTest {
 	@Test
 	public void deveRetornar_1(){
 		ConversorDeRomanoParaDecimal conversor = new ConversorDeRomanoParaDecimal();
-		assertEquals(10, conversor.converte("X"));
+		assertEquals(1, conversor.converte("I"));
 	}
 }

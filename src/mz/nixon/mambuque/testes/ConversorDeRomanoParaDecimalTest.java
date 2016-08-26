@@ -1,5 +1,17 @@
 package mz.nixon.mambuque.testes;
 
-public class ConversorDeRomanoParaDecimalTest {
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
+import mz.nixon.mambuque.conversor.ConversorDeRomanoParaDecimal;
+
+
+
+public class ConversorDeRomanoParaDecimalTest {
+	
+	@Test
+	public void deveRetornar_1(){
+		ConversorDeRomanoParaDecimal conversor = new ConversorDeRomanoParaDecimal();
+		assertEquals(10, conversor.converte("X"));
+	}
 }

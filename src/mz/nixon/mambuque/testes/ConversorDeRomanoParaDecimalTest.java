@@ -14,4 +14,10 @@ public class ConversorDeRomanoParaDecimalTest {
 		ConversorDeRomanoParaDecimal conversor = new ConversorDeRomanoParaDecimal();
 		assertEquals(1, conversor.converte("I"));
 	}
+	
+	@Test
+	public void deveRetornar_12(){
+		ConversorDeRomanoParaDecimal conversor = new ConversorDeRomanoParaDecimal();
+		assertEquals(12, conversor.converte("XII"));
+	}
 }

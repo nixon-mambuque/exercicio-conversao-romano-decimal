@@ -56,10 +56,16 @@ public class ConversorDeRomanoParaDecimal {
 			}
 		}
 		
-		return 0;
+		return valorActual;
 	}
 	
-	public int logicaDeConversao(int valalorActual, int valorAnterior, int ultimoValor){
-		return 0;
+	public int logicaDeConversao(int valorActual, int valorAnterior, int ultimoValor){
+		
+		if(valorAnterior > valorActual){
+			return valorAnterior-valorActual;
+		}
+		else{
+			return valorAnterior + valorActual;
+		}
 	}
 }

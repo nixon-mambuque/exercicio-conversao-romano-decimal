@@ -20,4 +20,9 @@ public class ConversorDeRomanoParaDecimalTest {
 		ConversorDeRomanoParaDecimal conversor = new ConversorDeRomanoParaDecimal();
 		assertEquals(3, conversor.converte("III"));
 	}
+	
+	@Test
+	public void deveRetornarNullException(){
+		
+	}
 }

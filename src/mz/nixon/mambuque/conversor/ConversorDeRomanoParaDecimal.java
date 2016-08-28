@@ -62,7 +62,7 @@ public class ConversorDeRomanoParaDecimal {
 	public int logicaDeConversao(int valorActual, int valorAnterior, int ultimoValor){
 		
 		if(valorAnterior > valorActual){
-			return valorAnterior-valorActual;
+			return valorAnterior - valorActual;
 		}
 		else{
 			return valorAnterior + valorActual;

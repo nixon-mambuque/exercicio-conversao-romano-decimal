@@ -14,40 +14,40 @@ public class ConversorDeRomanoParaDecimal {
 		else{
 			
 			for(int i = romano.length()-1; i >= 0 ; i--){
-				switch (romano.charAt(i)) {
+				switch (romano.toUpperCase().charAt(i)) {
 				case 'M':
-					valorActual = logicaDeConversao(1000, valorActual, ultimoValor);
-					ultimoValor = 1000;
+					ultimoValor = logicaDeConversao(1000, valorActual, ultimoValor);
+					valorActual = 1000;
 					break;
 					
 				case 'D':
-					valorActual = logicaDeConversao(500, valorActual, ultimoValor);
-					ultimoValor = 500;
+					ultimoValor = logicaDeConversao(500, valorActual, ultimoValor);
+					valorActual = 500;
 					break;
 					
 				case 'C':
-					valorActual = logicaDeConversao(100, valorActual, ultimoValor);
-					ultimoValor = 100;
+					ultimoValor = logicaDeConversao(100, valorActual, ultimoValor);
+					valorActual = 100;
 					break;
 					
 				case 'L':
-					valorActual = logicaDeConversao(50, valorActual, ultimoValor);
-					ultimoValor = 50;
+					ultimoValor = logicaDeConversao(50, valorActual, ultimoValor);
+					valorActual = 50;
 					break;
 					
 				case 'X':
-					valorActual = logicaDeConversao(10, valorActual, ultimoValor);
-					ultimoValor = 10;
+					ultimoValor = logicaDeConversao(10, valorActual, ultimoValor);
+					valorActual = 10;
 					break;
 					
 				case 'V':
-					valorActual = logicaDeConversao(5, valorActual, ultimoValor);
-					ultimoValor = 5;
+					ultimoValor = logicaDeConversao(5, valorActual, ultimoValor);
+					valorActual = 5;
 					break;
 					
 				case 'I':
-					valorActual = logicaDeConversao(1, valorActual, ultimoValor);
-					ultimoValor = 1;
+					ultimoValor = logicaDeConversao(1, valorActual, ultimoValor);
+					valorActual = 1;
 					break;
 
 				default:
@@ -56,12 +56,12 @@ public class ConversorDeRomanoParaDecimal {
 			}
 		}
 		
-		return valorActual;
+		return ultimoValor;
 	}
 	
 	public int logicaDeConversao(int valorActual, int valorAnterior, int ultimoValor){
 		
-		if(ultimoValor > valorActual){
+		if(valorAnterior > valorActual){
 			return ultimoValor - valorActual;
 		}
 		else{
